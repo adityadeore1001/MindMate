@@ -1,0 +1,10 @@
+.loading-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.loading-text {
+  margin-top: 1rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
