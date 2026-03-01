@@ -1,0 +1,31 @@
+.wordcloud-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 300px;
+  align-content: center;
+}
+
+.wordcloud-word {
+  display: inline-block;
+  margin: 4px;
+  padding: 4px 8px;
+  font-weight: 600;
+  cursor: default;
+  transition: transform 0.2s ease;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.wordcloud-word:hover {
+  transform: scale(1.1);
+}
+
+.wordcloud-empty {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 3rem;
+  font-style: italic;
+}
