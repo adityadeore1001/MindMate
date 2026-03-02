@@ -1,31 +1,40 @@
+/* ============================================
+   Word Cloud — Keyword frequency
+   ============================================ */
+
 .wordcloud-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: var(--space-3);
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  min-height: 300px;
   align-content: center;
+  padding: var(--space-6);
+  min-height: 280px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--bg-glass-border);
 }
 
 .wordcloud-word {
   display: inline-block;
-  margin: 4px;
-  padding: 4px 8px;
+  padding: var(--space-2) var(--space-3);
   font-weight: 600;
+  border-radius: var(--radius-sm);
   cursor: default;
-  transition: transform 0.2s ease;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  font-size: inherit;
 }
 
 .wordcloud-word:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
+  opacity: 1;
 }
 
 .wordcloud-empty {
   text-align: center;
-  color: var(--text-secondary);
-  padding: 3rem;
+  color: var(--text-muted);
+  padding: var(--space-12);
+  font-size: var(--text-sm);
   font-style: italic;
 }

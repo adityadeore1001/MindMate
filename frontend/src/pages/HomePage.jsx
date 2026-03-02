@@ -80,9 +80,9 @@ function HomePage() {
   return (
     <div className="home-page">
       <div className="container">
-        <header className="header">
+        <header className="hero">
           <h1 className="title">MindMate</h1>
-          <p className="subtitle">AI-Powered Mental Health Risk Detection System</p>
+          <p className="subtitle">AI-powered insight from your words. Understand sentiment and risk signals—for awareness, not diagnosis.</p>
         </header>
 
         <div className="glass-card main-card">
